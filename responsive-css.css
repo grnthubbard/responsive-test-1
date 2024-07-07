@@ -63,9 +63,9 @@
         padding: 2em; /* Add padding around the container */
     }
     aside img {
-        object-fit: contain;
-        width: 20em;
-        height: 25.5em;
+        height: auto;
+        max-width: 100%;;
+        width: 100%;
     }
     footer {
         display: flex;
