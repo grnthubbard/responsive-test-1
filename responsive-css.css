@@ -24,6 +24,20 @@
     aside {
         background-color: lightblue; /* Specific styling for aside */
     }
+    aside img {
+        object-fit: contain;
+        width: 20em;
+        height: 25.5em;
+    }
+    footer {
+        display: flex;
+        background-color: peachpuff;
+        align-items: end;
+        gap: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 1em;
+    }
 }
 
 /*smaller screens would like this. */
