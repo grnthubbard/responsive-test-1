@@ -47,12 +47,34 @@
     }
     h1 {
         font-family: Arial, Helvetica, sans-serif;
+        padding: 5%;
     }
     article {
         background-color: blue; /* Specific styling for article */
     }
     aside {
         background-color: lightblue; /* Specific styling for aside */
+    }
+    .container {
+        display: flex;
+        flex-direction: column; /* Center horizontally within the container */
+        align-items: center; /* Align items at the start vertically */
+        gap: 2em; /* Add space between article and aside */
+        padding: 2em; /* Add padding around the container */
+    }
+    aside img {
+        object-fit: contain;
+        width: 20em;
+        height: 25.5em;
+    }
+    footer {
+        display: flex;
+        background-color: peachpuff;
+        align-items: end;
+        gap: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 1em;
     }
    }
 
