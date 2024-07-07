@@ -5,7 +5,28 @@
     h1 {
         font-family: Arial, Helvetica, sans-serif;
     }
+    .container {
+        display: flex;
+        justify-content: center; /* Center horizontally within the container */
+        align-items: flex-start; /* Align items at the start vertically */
+        gap: 2em; /* Add space between article and aside */
+        padding: 2em; /* Add padding around the container */
+    }
+    article, aside {
+        max-width: 500px; /* Set max width for readability */
+        width: 100%; /* Make them responsive */
+        padding: 1em; /* Add padding for content */
+        background-color: blue; /* Your background color */
+    }
+    article {
+        background-color: blue; /* Specific styling for article */
+    }
+    aside {
+        background-color: lightblue; /* Specific styling for aside */
+    }
 }
+
+/*smaller screens would like this. */
 @media (max-width: 600px) {
     body {
        background-color: red;
@@ -15,17 +36,7 @@
     }
    }
 
-   article h1 {
-    padding-bottom: 2em;
-    font-size: xx-large;
-    
-   }
-   article p {
-    margin-left: 2em;
-   }
-   article {
-    padding-top: 3em;
-   }
+
 
 h1 {
     text-align: center;
@@ -34,10 +45,17 @@ h1 {
     padding-top: 2em;
     -webkit-transform:scale(1,2.5); /* Safari and Chrome */
     -moz-transform:scale(1,2); /* Firefox */
+    transform:scale(1,2)
 }
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-    grid-gap: 1em;
-}
+article h1 {
+    padding-bottom: 2em;
+    font-size: xx-large;
+    
+   }
+   article p {
+    margin-left: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    justify-content: center;
+    padding-right: 10px;
+   }
